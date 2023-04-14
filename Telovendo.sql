@@ -1,30 +1,34 @@
-CREATE DATABASE Telovendo;
+-- USE Telovendo;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('23345678-9', 'Ricardo', 'Pérez González', '1990-05-15', 'ventas')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('18458206-6', 'Mauricio', 'Morales Veas', '1994-03-17', 'jefatura')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('9876543-9', 'Jose', 'González Pérez', '1997-07-22', 'administracion')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('1234567-2', 'Pablo', 'Pérez Pereira', '1991-02-15', 'ventas')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('22345678-1', 'Karem', 'Ortiz Vergara', '1993-05-27', 'ventas')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('8765432-1', 'Jason', 'Kruger González', '1960-05-22', 'jefatura')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('7654321-9', 'Ignacia', 'Pérez González', '1977-02-10', 'marketing')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('16543789-0', 'Lala', 'Lolo Guerra', '1988-12-11', 'marketing')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('1234567-9', 'Camila', 'Vergara Plaza', '1977-09-10', 'ventas')
+;
+INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
+VALUES ('22345678-9', 'Juan', 'González Pérez', '1999-05-19', 'ventas')
+;
 
-USE Telovendo;
-
-CREATE TABLE cliente (
-  codigo VARCHAR(20) NOT NULL UNIQUE,
-  nombres VARCHAR(255) NOT NULL,
-  apellidos VARCHAR(255) NOT NULL,
-  telefono BIGINT,
-  direccion VARCHAR(255),
-  comuna VARCHAR(100),
-  correo_electronico VARCHAR(255),
-  fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-CREATE TABLE producto (
-  SKU VARCHAR(255) NOT NULL UNIQUE,
-  nombre VARCHAR(255) NOT NULL,
-  categoria VARCHAR(255),
-  productor VARCHAR(255),
-  cantidad_en_stock INT
-);
-CREATE TABLE vendedor (
-  RUN VARCHAR(255) NOT NULL UNIQUE,
-  nombre VARCHAR(255) NOT NULL,
-  apellidos VARCHAR(255) NOT NULL,
-  fecha_nacimiento DATE,
-  seccion ENUM('ventas', 'marketing', 'administracion', 'jefatura') NOT NULL
-);
-CREATE USER 'admintienda'@'localhost' IDENTIFIED BY 'admintienda';
-GRANT ALL PRIVILEGES ON Telovendo.* TO 'admintienda'@'localhost';
+SELECT *
+FROM VENDEDOR;

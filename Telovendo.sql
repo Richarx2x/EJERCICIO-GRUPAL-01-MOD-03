@@ -102,7 +102,7 @@ INSERT INTO producto (SKU, nombre, categoria, productor, cantidad_en_stock)
 VALUES ('47144', 'Desktop Gamer AMD Ryzen 5 5600X 8GB 1TB NVIDIA GTX1660S', 'Torre', 'Gear', '4')
 ;
 
--- USE Telovendo;
+-- TABLA VENDEDOR INFO: 
 INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion) 
 VALUES ('23345678-9', 'Ricardo', 'Pérez González', '1990-05-15', 'ventas')
 ;
@@ -134,7 +134,7 @@ INSERT INTO Vendedor (run, nombre, apellidos, fecha_nacimiento, seccion)
 VALUES ('22345678-9', 'Juan', 'González Pérez', '1999-05-19', 'ventas')
 ;
 
-select * from producto;
+select * from vendedor;
 
 
 

@@ -156,5 +156,5 @@ VALUES ( '0000009', 'Paola Flor','Amada del Rio' , 568978564545,'calle fuego 134
 INSERT INTO cliente ( codigo, nombres, apellidos, telefono, direccion, comuna, correo_electronico, fecha_registro)
 VALUES ( '0000010', 'Paolo ','Zarate Navarrete' , 56980809765,' rocas grande 230','Llay.llay',' zarate@gmail.com',now());
 
-
-
+-- Evaluamos tabla
+SELECT * FROM vendedor;

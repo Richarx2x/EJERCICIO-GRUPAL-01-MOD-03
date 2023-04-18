@@ -8,3 +8,5 @@ INTEGRANTES:
 - Mauricio Morales
 - Aracily Morales
 - Álvaro Stuardo
+
+Trabajo final en archivo Telovendo.sql
